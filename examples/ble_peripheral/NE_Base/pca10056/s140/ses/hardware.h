@@ -1,0 +1,43 @@
+#ifndef HARDWARE_H
+#define HARDWARE_H
+
+#include "nrf_gpio.h"
+
+/* Pin Configurations */
+
+/* SPI */
+#define MSPI_MISO NRF_GPIO_PIN_MAP(0, 13)
+#define MSPI_MOSI NRF_GPIO_PIN_MAP(0, 15)
+#define MSPI_SCK NRF_GPIO_PIN_MAP(0, 17)
+
+/* I2C */
+#define MSDA NRF_GPIO_PIN_MAP(1, 10)
+#define MSCL NRF_GPIO_PIN_MAP(1, 11)
+
+/* FRAM */
+#define FRAM_CS NRF_GPIO_PIN_MAP(1, 2)
+
+/* FLASH */
+#define QSPI_CSN NRF_GPIO_PIN_MAP(1, 7)
+#define QSPI_CLK NRF_GPIO_PIN_MAP(0, 22)
+#define QSPI_I00 NRF_GPIO_PIN_MAP(0, 24)
+#define QSPI_I01 NRF_GPIO_PIN_MAP(1, 6)
+#define QSPI_I02 NRF_GPIO_PIN_MAP(0, 25)
+#define QSPI_I03 NRF_GPIO_PIN_MAP(0, 20)
+
+
+/* ACCELEROMETER */
+#define MPU_INT NRF_GPIO_PIN_MAP(1, 1)
+
+/* I2C MULTIPLEXER */
+#define I2C_MUX_RESET NRF_GPIO_PIN_MAP(0, 31)
+
+/* BATTERY MONITOR */
+#define BATTERY_LEVEL NRF_GPIO_PIN_MAP(0,29)
+
+/* AFE4404 */
+#define AFE4404_I2C_CHANNEL 1
+#define AFE4404_RESET_PIN   NRF_GPIO_PIN_MAP(1,13)
+#define AFE4404_INT_PIN     NRF_GPIO_PIN_MAP(1,15)
+
+#endif

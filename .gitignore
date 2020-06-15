@@ -1,7 +1,7 @@
 *.zip
 *.pdf
 
-*
+/*
 !.gitignore
 !modules
 !examples
