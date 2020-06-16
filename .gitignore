@@ -1,11 +1,2 @@
 *.zip
 *.pdf
-
-/*
-!.gitignore
-!modules
-!examples
-examples/*
-!examples/ble_peripheral/
-examples/ble_peripheral/*
-!examples/ble_peripheral/NE_Base/
